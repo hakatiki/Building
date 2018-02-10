@@ -35,14 +35,11 @@ int main() {
     auto be = chrono::high_resolution_clock::now();
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    //map_x.reserve(builds);
     cin >> builds;;
-    //map_x.reserve(builds);
     for(int i = 0; i < builds; i++){
         cin >> a >> b >> c >> d;
         sum += (c - a) * 2 + (d - b) * 2;
-        //arr[i] = {a,b,c,d};
-        //auto p = map_x.find(a);
+        
         map_x[a].push_back({b,d});
         map_x[c].push_back({b,d});
         
